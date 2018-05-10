@@ -13,7 +13,7 @@ namespace EmotionPlatzi.Web.Controllers
         public ActionResult Index()
         {
             //La viewnbag puede tener cualquir tipo de propiedades
-            ViewBag.WelcomeMessage = "Hola Mundo";
+            ViewBag.WelcomeMessage = "Welcome to Platzi Emotion!";
             ViewBag.ValorEntero = 1;
             return View();
         }
@@ -21,7 +21,7 @@ namespace EmotionPlatzi.Web.Controllers
         public ActionResult IndexAlt()
         {
             var modelo = new Home();
-            modelo.WelcomeMessage = "Hola mundo desde el modelo";
+            modelo.WelcomeMessage = "Here you can see if a picture has happy or sad faces!";
             return View(modelo);
         }
     }
